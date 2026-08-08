@@ -39,6 +39,12 @@
     .pill{display:inline-block;border:1px solid var(--border);padding:.2rem .5rem;border-radius:999px;font-size:.8rem;color:var(--link)}
     .btn{display:inline-block;border:1px solid var(--border);padding:.35rem .7rem;border-radius:.5rem}
     .btn:hover{border-color:var(--linkHover)}
+    .abstract summary{cursor:pointer;color:var(--link);display:inline-block;padding:.35rem .7rem;border:1px solid var(--border);border-radius:.5rem}
+    .abstract summary:hover{border-color:var(--linkHover);text-decoration:underline}
+    .abstract summary::-webkit-details-marker{display:none}
+    .abstract[open] summary{margin-bottom:.6rem}
+    .abstract p{margin:.4rem 0}
+    .links{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin:.6rem 0}
     @media (max-width:640px){.row{flex-direction:column;align-items:flex-start}}
   </style>
 </head>
@@ -59,47 +65,43 @@
     <h2>Working Papers</h2>
     <div class="paper">
       <div class="paper-title">The Impacts of Job Security and Tenure Reforms on Teacher and Student Outcomes</div>
-      <div class="meta">Wilfried Adohinzin · 2025 · <span class="muted">Fuzzy RD & DiD; Peru administrative data</span></div>
-      <div class="tags">
-        <span class="pill">Labor</span>
-        <span class="pill">Development</span>
-        <span class="pill">Education</span>
+      <div class="links">
+        <a class="btn" href="https://drive.google.com/file/d/1NWpzQXV1p54IkEfSPVU18SVYPmwyqOeW/view?usp=drive_link">PDF</a>
+        <a class="btn" href="#">Replication Code</a>
       </div>
-      <p>I study merit‑based job security for public‑sector teachers. Offering permanent contracts reduces exits, especially among high‑quality teachers, and modestly improves student learning; effects are weaker in rural and low‑SES settings. Composition changes increase average teacher quality.</p>
-      <p>
-        <a class="btn" href="https://drive.google.com/file/d/1NWpzQXV1p54IkEfSPVU18SVYPmwyqOeW/view?usp=drive_link">Paper</a>
-      </p>
+      <details class="abstract">
+        <summary>Abstract</summary>
+        <p>I study merit‑based job security for public‑sector teachers. Offering permanent contracts reduces exits, especially among high‑quality teachers, and modestly improves student learning; effects are weaker in rural and low‑SES settings. Composition changes increase average teacher quality.</p>
+      </details>
     </div>
 
     <div class="paper">
       <div class="paper-title">The Effects of Immigration Enforcement on the Rental Market: Evidence from the Secure Communities Program</div>
-      <div class="meta">2025 · <span class="muted">Event study; US counties</span></div>
-      <p>Enhanced interior immigration enforcement decreases rental prices in targeted areas, consistent with out‑migration and demand reallocation.</p>
-      <p>
-        <a class="btn" href="#">Paper</a>
-      </p>
+      <div class="links">
+        <a class="btn" href="#">PDF</a>
+        <a class="btn" href="#">Replication Code</a>
+      </div>
+      <details class="abstract">
+        <summary>Abstract</summary>
+        <p>Enhanced interior immigration enforcement decreases rental prices in targeted areas, consistent with out‑migration and demand reallocation.</p>
+      </details>
     </div>
 
     <div class="paper">
       <div class="paper-title">Pregnancy, Childbirth and Labor Market Outcomes: Evidence from Europe</div>
-      <div class="meta">2024 · <span class="muted">Generations & Gender Survey</span></div>
-      <p>Documents large and persistent child penalties for women relative to men across European contexts.</p>
-      <p>
-        <a class="btn" href="#">Paper</a>
-      </p>
-    </div>
-
-    <div class="paper">
-      <div class="paper-title">The Heat of the Moment: Temperature’s Role in Shaping Classroom Dynamics</div>
-      <div class="meta">2024 · <span class="muted">Temperature shocks & teacher performance</span></div>
-      <p>Explores how heat exposure affects classroom behavior and teacher productivity.</p>
-      <p>
-        <a class="btn" href="#">Paper</a>
-      </p>
+      <div class="links">
+        <a class="btn" href="#">PDF</a>
+        <a class="btn" href="#">Replication Code</a>
+      </div>
+      <details class="abstract">
+        <summary>Abstract</summary>
+        <p>Documents large and persistent child penalties for women relative to men across European contexts.</p>
+      </details>
     </div>
 
     <h2>Works in Progress</h2>
     <ul>
+      <li>The Heat of the Moment: Temperature's Role in Shaping Classroom Dynamics — explores how heat exposure affects classroom behavior and teacher productivity.</li>
       <li>Teacher collaboration and peer dynamics in Peru: promoted vs temporary teachers.</li>
       <li>Within‑student, across‑subject estimates of teacher permanence and learning.</li>
     </ul>
