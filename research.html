@@ -9,8 +9,8 @@
     :root{
       --text:#0f172a; /* slate-900 */
       --muted:#475569; /* slate-600 */
-      --link:#b91c1c; /* red-700 */
-      --linkHover:#7f1d1d; /* red-900 */
+      --link:#0284c7; /* sky-600 */
+      --linkHover:#075985; /* sky-800 */
       --bg:#ffffff;
       --border:#e2e8f0; /* slate-200 */
       --maxw:820px;
@@ -27,24 +27,23 @@
     .row{display:flex;justify-content:space-between;align-items:center;gap:1rem}
     main{line-height:1.75}
     h1{font-size:2rem;margin:1.2rem 0 .5rem}
-    h2{font-size:1.15rem;margin:2rem 0 .5rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+    h2{font-size:1.15rem;margin:2rem 0 .5rem;color:var(--muted);letter-spacing:.02em}
     p{margin:.6rem 0}
     ul{margin:.4rem 0 .8rem 1.2rem}
     footer{border-top:1px solid var(--border);margin-top:2rem;color:var(--muted);font-size:.95rem}
     .muted{color:var(--muted)}
     .paper{margin:1rem 0 1.5rem}
     .paper-title{font-weight:600}
-    .meta{font-size:.95rem;color:var(--muted)}
-    .tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.35rem}
-    .pill{display:inline-block;border:1px solid var(--border);padding:.2rem .5rem;border-radius:999px;font-size:.8rem;color:var(--link)}
+    .coauthors{font-size:.95rem;color:var(--muted);margin-top:.15rem}
     .btn{display:inline-block;border:1px solid var(--border);padding:.35rem .7rem;border-radius:.5rem}
     .btn:hover{border-color:var(--linkHover)}
     .abstract summary{cursor:pointer;color:var(--link);display:inline-block;padding:.35rem .7rem;border:1px solid var(--border);border-radius:.5rem}
     .abstract summary:hover{border-color:var(--linkHover);text-decoration:underline}
     .abstract summary::-webkit-details-marker{display:none}
+    .abstract[open]{flex-basis:100%}
     .abstract[open] summary{margin-bottom:.6rem}
     .abstract p{margin:.4rem 0}
-    .links{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin:.6rem 0}
+    .links{display:flex;flex-wrap:wrap;gap:.5rem;align-items:flex-start;margin:.6rem 0}
     @media (max-width:640px){.row{flex-direction:column;align-items:flex-start}}
   </style>
 </head>
@@ -66,42 +65,44 @@
     <div class="paper">
       <div class="paper-title">The Impacts of Job Security and Tenure Reforms on Teacher and Student Outcomes</div>
       <div class="links">
-        <a class="btn" href="https://drive.google.com/file/d/1NWpzQXV1p54IkEfSPVU18SVYPmwyqOeW/view?usp=drive_link">PDF</a>
-        <a class="btn" href="#">Replication Code</a>
+        <a class="btn" href="https://drive.google.com/file/d/1NWpzQXV1p54IkEfSPVU18SVYPmwyqOeW/view?usp=drive_link">pdf</a>
+        <a class="btn" href="#">code</a>
+        <details class="abstract">
+          <summary>abstract</summary>
+          <p>I study merit‑based job security for public‑sector teachers. Offering permanent contracts reduces exits, especially among high‑quality teachers, and modestly improves student learning; effects are weaker in rural and low‑SES settings. Composition changes increase average teacher quality.</p>
+        </details>
       </div>
-      <details class="abstract">
-        <summary>Abstract</summary>
-        <p>I study merit‑based job security for public‑sector teachers. Offering permanent contracts reduces exits, especially among high‑quality teachers, and modestly improves student learning; effects are weaker in rural and low‑SES settings. Composition changes increase average teacher quality.</p>
-      </details>
     </div>
 
     <div class="paper">
       <div class="paper-title">The Effects of Immigration Enforcement on the Rental Market: Evidence from the Secure Communities Program</div>
+      <div class="coauthors">with <a href="https://alokranjan06.github.io/">Alok Ranjan</a></div>
       <div class="links">
-        <a class="btn" href="#">PDF</a>
-        <a class="btn" href="#">Replication Code</a>
+        <a class="btn" href="#">pdf</a>
+        <a class="btn" href="#">code</a>
+        <details class="abstract">
+          <summary>abstract</summary>
+          <p>Enhanced interior immigration enforcement decreases rental prices in targeted areas, consistent with out‑migration and demand reallocation.</p>
+        </details>
       </div>
-      <details class="abstract">
-        <summary>Abstract</summary>
-        <p>Enhanced interior immigration enforcement decreases rental prices in targeted areas, consistent with out‑migration and demand reallocation.</p>
-      </details>
     </div>
 
     <div class="paper">
       <div class="paper-title">Pregnancy, Childbirth and Labor Market Outcomes: Evidence from Europe</div>
+      <div class="coauthors">with Carolyn Davin, Allen Hardiman, Rebecca Thornton, and Theodoros Velentzas</div>
       <div class="links">
-        <a class="btn" href="#">PDF</a>
-        <a class="btn" href="#">Replication Code</a>
+        <a class="btn" href="#">pdf</a>
+        <a class="btn" href="#">code</a>
+        <details class="abstract">
+          <summary>abstract</summary>
+          <p>Documents large and persistent child penalties for women relative to men across European contexts.</p>
+        </details>
       </div>
-      <details class="abstract">
-        <summary>Abstract</summary>
-        <p>Documents large and persistent child penalties for women relative to men across European contexts.</p>
-      </details>
     </div>
 
     <h2>Works in Progress</h2>
     <ul>
-      <li>The Heat of the Moment: Temperature's Role in Shaping Classroom Dynamics</li>
+      <li>The Heat of the Moment: Temperature's Role in Shaping Classroom Dynamics (with <a href="https://alokranjan06.github.io/">Alok Ranjan</a> and Mahounan Yedomiffi)</li>
       <li>Teacher collaboration and peer dynamics in Peru: promoted vs temporary teachers.</li>
       <li>Within‑student, across‑subject estimates of teacher permanence and learning.</li>
     </ul>
